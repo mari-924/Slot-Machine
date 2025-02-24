@@ -1,13 +1,13 @@
 let img_names = ["bell", "cherry", "bar"];
 
 let img_1 = document.querySelector("#first");
-img_1.src = "/hw2/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
+img_1.src = "/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
 
 let img_2 = document.querySelector("#second");
-img_2.src = "/hw2/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
+img_2.src = "/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
 
 let img_3 = document.querySelector("#third");
-img_3.src = "/hw2/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
+img_3.src = "/images/" + img_names[(Math.floor(Math.random()*2)+1)] + ".jpg";
 
 document.querySelector("#credits_btn").addEventListener("click", setCredits);
 document.querySelector("#bet_btn").addEventListener("click", getBet);
@@ -48,9 +48,9 @@ function displaySymbols(){
     let second = Math.floor(Math.random() * 3);
     let third = Math.floor(Math.random() * 3);
 
-    img_1.src = "/hw2/images/" + img_names[first] + ".jpg";
-    img_2.src = "/hw2/images/" + img_names[second] + ".jpg";
-    img_3.src = "/hw2/images/" + img_names[third] + ".jpg";
+    img_1.src = "/images/" + img_names[first] + ".jpg";
+    img_2.src = "/images/" + img_names[second] + ".jpg";
+    img_3.src = "/images/" + img_names[third] + ".jpg";
 
     if(first === second && second === third){
         win(currentBet);
